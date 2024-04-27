@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  h1, p {
+    margin-bottom: 10px;
+  }
+  
+  #lock-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  #lock-url, #lock-password {
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  #lock-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #message {
+    color: red;
+    font-weight: bold;
+  }
+  

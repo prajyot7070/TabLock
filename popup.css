@@ -59,9 +59,11 @@ h3{
   button {
     padding: 5px 10px;
     border-radius: 20px;
-    
   }
 
+  #add-url{
+    background-color: #05ff1a;
+  }
   .remove-icon {
     color: red;
     cursor: pointer;

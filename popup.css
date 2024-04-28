@@ -1,33 +1,69 @@
 body {
-    font-family: sans-serif;
     margin: 20px;
+    font-family: "Poppins", sans-serif;
+    width: 300px;
+    padding: 10px;
+    background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   }
-  
-  h1, p {
-    margin-bottom: 10px;
-  }
-  
-  #lock-controls {
+
+h3{
+  font-size: 30px;
+  font-style: italic;
+  font-stretch: expanded;
+  background: -webkit-linear-gradient(#05ff1a, #1154ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+  .title-bar{
+    border-radius: 20px;
+    background-color: white;
+    margin: 15px;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  #lock-url, #lock-password {
-    border: 1px solid #ccc;
     padding: 5px;
+    width: fit-content;
+
   }
-  
-  #lock-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
+
+  .title-bar h3,
+  .title-bar img {
+  margin: 0 25px; /* Margin for both h3 and img elements */
+  }
+
+  #url-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  #url-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 25px;
+  }
+
+  button {
     padding: 5px 10px;
-    cursor: pointer;
+    border-radius: 20px;
+    
   }
-  
-  #message {
+
+  .remove-icon {
     color: red;
-    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px; /* Adjust size as needed */
   }
-  

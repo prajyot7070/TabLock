@@ -38,15 +38,15 @@ document.addEventListener('DOMContentLoaded', function() {
       const listItem = document.createElement('li');
       listItem.textContent = url;
   
-      const removeButton = document.createElement('button');
-      removeButton.textContent = 'Remove';
-      removeButton.addEventListener('click', function() {
+      const removeIcon = document.createElement('i');
+      removeIcon.classList.add('fas', 'fa-trash');
+      removeIcon.addEventListener('click', function() {
         lockedUrls.delete(url);
         listItem.remove();
         saveLockedUrls();
       });
   
-      listItem.appendChild(removeButton);
+      listItem.appendChild(removeIcon);
       urlList.appendChild(listItem);
     }
   
